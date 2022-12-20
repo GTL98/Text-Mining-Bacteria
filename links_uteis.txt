@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/52125333/extracting-bold-text-from-resumes-docx-doc-pdf-using-python
+https://www.talkhelper.com/how-to-convert-pdf-to-word-with-python/
+https://stackoverflow.com/questions/60199068/how-to-retrieve-all-pages-from-pdf-as-a-single-string-in-python-3-using-pypdf2
