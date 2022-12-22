@@ -1,13 +1,8 @@
-import PyPDF2
+import os
+from pdf2docx import Converter
 
-arquivo = 'Documento sem nome.pdf'
-saida = ''
 
-with open(arquivo, 'rb') as f:
-    reader = PyPDF2.PdfFileReader(f)
-    contador = reader.numPages
-    for i in range(contador):
-        pagina = reader.pages[i]
-        saida += pagina.extract_text()
-
-print(saida)
+def conversor_pdf_docx(caminho_arquivo: str, pasta_saida: str, arquivo_pdf: str):
+    cv = Converter(f'{caminho_arquivo}/{arquivo_pdf}.pdf')
+    cv.convert(f'{pasta_saida}/{arquivo_pdf}.docx')
+    cv.close()

@@ -2,7 +2,9 @@ arquivo = 'teste.txt'
 
 bacterias = ['Bacillus subtilis',
              'Helicobacter pylori',
-             'Alistipes indistinctus']
+             'Alistipes indistinctus',
+             'Escherichia coli',
+             'Streptococcus pneumoniae']
 
 with open(arquivo, 'r') as txt:
     conteudo = txt.readlines()
